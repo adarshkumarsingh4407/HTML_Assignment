@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        /* CSS Styling */
+        div {
+            text-align: center;  /* pura form center align ho raha hai */
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h2>Fill the form...</h2>
+
+        <form action="form.php">
+
+            <!-- Name -->
+            Name: <input type="text" placeholder="Enter Your Full Name"><br><br>
+
+            <!-- Email -->
+            Email: <input type="email" placeholder="Enter Your Email ID"><br><br>
+
+            <!-- Password -->
+            Password: <input type="password" placeholder="Enter Your Password"><br><br>
+
+            <!-- Gender -->
+            <h3>Gender:</h3>
+            <label for="male">
+                <input type="radio" value="male" name="class"> Male
+            </label><br>
+            <label for="female">
+                <input type="radio" value="female" name="class"> Female
+            </label><br><br>
+
+            <!-- Language -->
+            <h3>Select any language:</h3>
+            <label for="english">
+                <input type="checkbox" value="english" name="language"> English
+            </label><br>
+            <label for="spanish">
+                <input type="checkbox" value="spanish" name="language"> Spanish
+            </label><br>
+            <label for="arabic">
+                <input type="checkbox" value="arabic" name="language"> Arabic
+            </label><br><br>
+
+            <!-- Subject -->
+            <h3>Select the Subject:</h3>
+            <select name="subject">
+                <option value="default">Default</option>
+                <option value="front-end">Front-End</option>
+            </select>
+            <br><br>
+
+            <!-- Submit -->
+            <input type="submit" value="Submit">
+        </form>
+
+        <br>
+        <a href="index.html">Back to Main Page</a>
+    </div>
+
+</body>
+</html>
